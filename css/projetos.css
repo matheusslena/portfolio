@@ -1,0 +1,53 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Botão "Ver mais" */
+#toggle-projects {
+  display: block;
+  margin: 1.5rem auto 0 auto;
+  padding: 0.7rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#toggle-projects:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main, section {
+  flex: 1; 
+}
+
+footer {
+  margin-top: auto; 
+}
